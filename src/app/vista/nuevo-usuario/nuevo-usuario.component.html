@@ -1,0 +1,27 @@
+<app-cuerpo></app-cuerpo>
+<br>
+<div class="container">
+    <form [formGroup]="nuevoForm">
+        <div class="form-group" >
+          <label for="nombre" class="form-label">Nombre</label>
+          <input type="text" class="form-control" id="nombre" formControlName="nombre">
+          <div id="telefono" class="form-text">Ingresa tu nombre</div>
+        </div>
+        <div class="form-group">
+          <label for="correo" class="form-label">Correo</label>
+          <input type="text" class="form-control" id="correo" formControlName="correo">
+          <div id="telefono" class="form-text">Ingresa tu Correo</div>
+        </div>
+        <div class="form-group">
+            <label for="telefono" class="form-label">Telefono</label>
+            <input type="text" class="form-control" id="telefono" formControlName="telefono">
+            <div id="telefono" class="form-text">Ingresa tu número telefonico</div>
+          </div>
+        <button type="button" class="btn btn-success" (click)="postForm()">Guardar</button><br>
+        <br>
+        <button type="button" class="btn btn-danger" (click)="salir()">Salir</button><br>
+    </form>
+</div>
+
+
+<app-encabezado></app-encabezado>

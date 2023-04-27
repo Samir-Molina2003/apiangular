@@ -1,0 +1,329 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
+}
+
+.body{
+    position: absolute;
+    transform: translate(-50%, -0%);
+    top: 50%;
+    left: 50%;
+    position: relative;
+    margin: auto;
+}
+
+.container{
+    height: 450px;
+    width: 300px;
+    box-shadow: 0 10px 20px #000;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    font-family: sans-serif;
+    position: relative;
+    margin: auto;
+    
+}
+
+.shape{
+    background-color: #3498DB;
+    height: 250px;
+    width: 400px;
+    margin-left: -20px;
+    position: relative;
+    top: -80px;
+    box-shadow: 0 2px 15px #000;
+    transform: rotate(25deg);
+}
+
+.image{
+    height: 100px;
+    width: 100px;
+    background-image: url(https://i.pinimg.com/736x/b5/49/41/b5494197b2d462c940f88988b203d290.jpg);
+    position: relative;
+    top: 200px;
+    margin-left: 180px;
+    background-size: cover;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0 2px 15px #ABB2B9;
+    transform: rotate(-20deg);
+}
+
+
+.card {
+    background-color: #f2f2f2;
+  }
+
+
+
+.h4{
+    margin-bottom: 10px;
+}
+
+p{
+    padding-left: 30px;
+    padding-right: 30px;
+    line-height: 2;
+    color: #566573;
+}
+
+.icons{
+    margin-top: 25px;
+}
+
+.icons i {
+    margin-left: 20px;
+    font-size: 25px;
+    transition: .3s;
+    color: #2E86C1;
+}
+
+.icons i:hover {
+    transform: scale(1.2);
+    color: #2C3E50;
+}
+
+
+/*HEADER*/
+header{
+    width: 100%;
+    height: 60px;
+    background: #1B4F72;
+}
+
+.container-header{
+    width: 100%;
+    max-width: 1200px;
+    position: relative;
+    margin: auto;
+}
+
+.logo-title{
+    display: flex;
+}
+
+.logo-title img{
+    width: 40px;
+    height: 40px;
+    margin-top: 10px;
+    margin-left: 10px
+}
+
+.logo-title h4{
+    color: white;
+    font-weight: 100;
+    margin-left: 20px;
+    margin-top: 17px;
+}
+
+.fa-solid{
+    position: absolute;
+    right: 10px;
+    top: 17px;
+    color: white;
+    font-size: 28px;
+}
+
+/*Boton*/
+
+.btn{
+    padding: 10px 40px;
+    font-size: 16px;
+    background: none;
+    border-style: none;
+    border: 1px solid blue;
+    color: blue;
+    margin-top: 20px;
+    transition: background 300ms;
+    cursor: pointer;
+    text-align: center;
+}
+
+/*PORTADA*/
+
+.container-portada{
+    width: 100%;
+    height: 250px;
+    position: relative;
+    background-image: url(https://www.xtrafondos.com/wallpapers/cometas-en-el-cielo-estilo-anime-9915.jpg);
+    background-size: 100%;
+    animation: movimiento 10s infinite linear alternate;
+}
+
+@keyframes movimiento{
+    from{
+        background-position: bottom left;
+    }
+    to{
+        background-position: top right;
+    }
+}
+
+.capa-gradiante{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: -webkit-linear-gradient(left, black, #154360);
+    opacity: 0.5;
+}
+
+.container-detalles{
+    width: 100%;
+    max-width: 1200px;
+    position: relative;
+    margin: auto;
+}
+
+.detalles{
+    width: 100%;
+    max-width: 500px;
+    position: relative;
+    top: 20px;
+    left: 10px;
+    color: white;
+}
+
+
+.detalles h1{
+    font-size: 40px;
+    font-weight: 100;
+    text-align: center;
+}
+
+.detalles p{
+    margin-top: 10px;
+    font-size: 20px;
+    text-align: center;   
+    color: white;  
+}
+
+.detalles button{
+    padding: 10px 40px;
+    font-size: 16px;
+    background: none;
+    border-style: none;
+    border: 1px solid white;
+    color: white;
+    margin-top: 20px;
+    transition: background 300ms;
+    cursor: pointer;
+    text-align: center;    
+}
+
+.detalles button:hover{
+    background: white;
+    color: black;
+}
+
+/*Articulo*/
+
+main{
+    width: 100%;
+    max-width: 1200px;
+}
+
+article{
+    width: 100%;
+    max-width: 800px;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+article h1{
+    font-size: 40px;
+    font-weight: 100;
+}
+
+article hr{
+    max-width: 500px;
+    height: 4px;
+    border-style: none;
+    background: -webkit-linear-gradient(left, black, #154360);
+    margin-top: 10px;
+}
+
+
+/*FOOTER*/
+
+footer{
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #111;
+    height: auto;
+    width: 100vw;
+    font-family: "Open Sans";
+    padding-top: 40px;
+    color: #fff;
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-content h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+.socials li{
+    margin: 0 10px;
+}
+.socials a{
+    text-decoration: none;
+    color: #fff;
+}
+.socials a i{
+    font-size: 1.1rem;
+    transition: color .4s ease;
+
+}
+.socials a:hover i{
+    color: aqua;
+}
+
+.footer-bottom{
+    background: #000;
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+}
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
+
+
+
+
+
+  

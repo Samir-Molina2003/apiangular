@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="usuario.component.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <header>
+    <div class="container-header">
+      <div class="logo-title">
+        <img src="assets/Trifuerza.webp" alt="">
+        <h4>Hecho por Samir y Stephanie</h4>
+      </div>
+      <i class="fa-solid fa-bars"></i>
+
+    </div>
+  </header>
+  
+  <div class="container-portada">
+    <div class="capa-gradiante">
+      <div class="container-details">
+        <div class="detalles">
+          <h1>¡Hola de nuevo!</h1>
+          <p>{{datosPersona.nombre}}</p>
+          <button>¿Qué haremos hoy?</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <article>
+      <h1>Tarjeta de presentación</h1>
+      <hr>
+    </article>
+  </main>
+</body>
+</html>
+
+
+
+
+<br>
+<div class="body">
+<div class="container">
+  <div class="shape">
+    <div class="image"></div>
+  </div>
+  <h4 class="title">{{datosPersona.nombre}}</h4>
+  <p>
+    {{datosPersona.correo}}
+    <br>
+    {{datosPersona.telefono}}
+  </p>
+  <div class="icons">
+  <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+  <a href="https://web.whatsapp.com/"><i class="fa-brands fa-whatsapp"></i></a>
+  <a href="https://mx.linkedin.com/?src=go-pa&trk=sem-ga_campid.19001150288_asid.143806640876_crid.636777052012_kw.registrarse%20en%20linkedin_d.c_tid.kwd-460575646514_n.g_mt.e_geo.9136806&mcid=7000592715335761922&cid=&gclid=CjwKCAjwl6OiBhA2EiwAuUwWZeFlDLh0o1RcE9nvXwGHwrdmqp0mSXda1nyUzjVwFnqHYPws2xMmTxoClyEQAvD_BwE&gclsrc=aw.ds"><i class="fa-brands fa-linkedin"></i></a>
+  <a href="https://accounts.google.com/signup/v2/webcreateaccount?flowName=GlifWebSignIn&flowEntry=SignUp"><i class="fa-brands fa-google"></i></a>
+  </div>
+</div>
+</div>  
+<br>
+<button type="button" class="btn btn-primary" (click)="salir()">Salir</button>
+<br>
+<footer>
+  <div class="footer-content">
+      <h3>Aprendiendo Angular</h3>
+      <p>Practica meramente realizado por el aprendizaje</p>
+      <ul class="socials">
+          <li><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a></li>
+          <li><a href="https://web.whatsapp.com/"><i class="fa-brands fa-whatsapp"></i></a></li>
+          <li><a href="https://mx.linkedin.com/?src=go-pa&trk=sem-ga_campid.19001150288_asid.143806640876_crid.636777052012_kw.registrarse%20en%20linkedin_d.c_tid.kwd-460575646514_n.g_mt.e_geo.9136806&mcid=7000592715335761922&cid=&gclid=CjwKCAjwl6OiBhA2EiwAuUwWZf9zuQKNKryKUM-KbB6ZpyeS3rVsCfR4wv7diOp_Jf8O108NVFVp_xoC_7kQAvD_BwE&gclsrc=aw.ds"><i class="fa-brands fa-linkedin"></i></a></li>
+          <li><a href="https://accounts.google.com/signup/v2/webcreateaccount?flowName=GlifWebSignIn&flowEntry=SignUp"><i class="fa-brands fa-google"></i></a></li>
+
+      </ul>
+  </div>
+  <div class="footer-bottom">
+      <p>Realizado por Samir y Stephanie &copy;2023 ProyectoAngular. atte <span>Hola</span></p>
+  </div>
+</footer>

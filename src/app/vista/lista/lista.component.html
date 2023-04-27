@@ -1,0 +1,34 @@
+<app-cuerpo></app-cuerpo>
+<br>
+<div class="container">
+    <h2>Lista de Usuarios</h2>
+<button type="button" class="btn btn-success" (click)="nuevaPersona()">Nuevo Usuario</button><br>
+<br>
+<table class="table table-striped table-hover table-bordered">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Nombre</th>
+        <th scope="col">Correo</th>
+        <th scope="col">Telefono</th>
+      </tr>
+    </thead>
+    <tbody>
+       <tr *ngFor="let persona of personas" (click)="editarPersona(persona.id)">
+       <th scope="row">{{persona.id}}</th>
+       <td>{{persona.nombre}}</td>
+       <td>{{persona.correo}}</td>
+       <td>{{persona.telefono}}</td>
+       </tr>
+    </tbody>
+  </table>
+</div>
+<footer>
+  <div class="footer-content">
+      <h3>Aprendiendo Angular</h3>
+      <p>Practica meramente realizado por el aprendizaje</p>
+  </div>
+  <div class="footer-bottom">
+      <p>Realizado por Samir y Stephanie &copy;2023 ProyectoAngular. atte <span>Hola</span></p>
+  </div>
+</footer>
